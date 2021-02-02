@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
 """
-Blah
-
+Plot response to idealised dry-down
 
 """
 __author__ = "Martin De Kauwe"
-__version__ = "1.0 (10.08.2020)"
+__version__ = "1.0 (02.02.2020)"
 __email__ = "mdekauwe@gmail.com"
 
 import numpy as np
