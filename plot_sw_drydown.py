@@ -373,9 +373,9 @@ if __name__ == "__main__":
     ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
              out_aCa_eL.beta.rolling(window=win).mean(),
              c=colours[1], lw=3.0, ls="-", label="eLAI")
-    ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
-             out_aCa_aL_eD.beta.rolling(window=win).mean(),
-             c=colours[5], lw=3.0, ls="-", label="eVPD")
+    #ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
+    ##         out_aCa_aL_eD.beta.rolling(window=win).mean(),
+    #         c=colours[5], lw=3.0, ls="-", label="eVPD")
     ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
              out_eCa_eL.beta.rolling(window=win).mean(),
              c=colours[0], lw=3.0, ls="-", label="eCO$_2$ & eLAI")
