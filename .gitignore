@@ -1,0 +1,6 @@
+__pycache__
+*.nc
+met/*
+*.png
+*.pdf
+.DS_Store
