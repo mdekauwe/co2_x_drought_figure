@@ -562,11 +562,11 @@ if __name__ == "__main__":
     props = dict(boxstyle='round', facecolor='white', alpha=1.0,
                  ec="white")
     fig_label = "%s" % ("(a)")
-    ax1.text(0.01, 0.05, fig_label,
+    ax1.text(0.015, 0.07, fig_label,
             transform=ax1.transAxes, fontsize=14, verticalalignment='top',
             bbox=props)
     fig_label = "%s" % ("(b)")
-    ax2.text(0.01, 0.05, fig_label,
+    ax2.text(0.015, 0.07, fig_label,
             transform=ax2.transAxes, fontsize=14, verticalalignment='top',
             bbox=props)
 
