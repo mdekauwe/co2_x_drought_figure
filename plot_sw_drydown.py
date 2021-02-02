@@ -529,7 +529,7 @@ if __name__ == "__main__":
 
     ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
              out_aCa.sw.rolling(window=win).mean(), c="black", lw=3.0,
-             ls="-", label="aCO$_2$")
+             ls="-", label="Ambient")
     ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
              out_eCa.sw.rolling(window=win).mean(), c=colours[2], lw=3.0,
              ls="-", label="eCO$_2$")
@@ -571,5 +571,5 @@ if __name__ == "__main__":
             bbox=props)
 
     #fig.autofmt_xdate()
-    #fig.savefig("drydown.png", bbox_inches='tight', pad_inches=0.1, dpi=300)
-    fig.savefig("drydown_with_D.pdf", bbox_inches='tight', pad_inches=0.1)
+    fig.savefig("drydown_with_D.png", bbox_inches='tight', pad_inches=0.1, dpi=300)
+    #fig.savefig("drydown_with_D.pdf", bbox_inches='tight', pad_inches=0.1)
