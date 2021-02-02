@@ -321,9 +321,9 @@ if __name__ == "__main__":
     out_eCa_aL_eD = main(p, met, lai)
 
     met.vpd = evpd
-    met.ca = aco2
+    met.ca = eco2
     lai = np.ones(len(met)) * alai
-    out_aCa_aL_eD = main(p, met, lai)
+    out_eCa_aL_eD = main(p, met, lai)
 
     win=3
 
@@ -518,7 +518,7 @@ if __name__ == "__main__":
              (out_eCa_eL.E_can / out_aCa.E_can).rolling(window=win).mean(),
              c=colours[0], lw=3.0, ls="-", label="eCO$_2$ & LAI")
     ax1.plot(np.arange(-1, len(out_eCa.E_can)-1),
-             (out_aCa_aL_eD.E_can / out_aCa.E_can).rolling(window=win).mean(),
+             (out_eCa_aL_eD.E_can / out_aCa.E_can).rolling(window=win).mean(),
              c=colours[4], lw=3.0, ls="-", label="eCO$_2$ & eVPD")
     ax1.axhline(y=1.0, ls="--", color="lightgrey", alpha=0.5)
 
@@ -544,7 +544,7 @@ if __name__ == "__main__":
              out_eCa_eL.sw.rolling(window=win).mean(), c=colours[0],
              lw=3.0, ls="-", label="eCO$_2$ & eLAI")
     ax2.plot(np.arange(-1, len(out_eCa.E_can)-1),
-             out_aCa_aL_eD.sw.rolling(window=win).mean(), c=colours[4],
+             out_eCa_aL_eD.sw.rolling(window=win).mean(), c=colours[4],
              lw=3.0, ls="-", label="eCO$_2$ & eVPD")
     #ax2.set_xlim(0, 18)
     plt.setp(ax1.get_xticklabels(), visible=False)
